@@ -1,0 +1,87 @@
+/* Define o estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte como Arial, com uma alternativa sans-serif */
+    background-color: rgb(189, 223, 223); /* Define a cor de fundo da página */
+    margin: 0; /* Remove margens padrão do corpo */
+}
+
+/* Estiliza o título principal da página */
+h1 {
+    text-align: center; /* Centraliza o texto do título */
+    font-size: 50px; /* Define o tamanho da fonte do título */
+}
+
+/* Estilo para o seletor de raças (dropdown) */
+#raçaSelect {
+    display: block; /* Faz o seletor ser exibido como um bloco */
+    margin: 20px auto; /* Adiciona margens em cima e embaixo, e centraliza horizontalmente */
+    padding: 10px 20px; /* Adiciona espaçamento interno ao seletor */
+    font-size: 20px; /* Ajusta o tamanho da fonte dentro do seletor */
+    size: 100px; /* Define a altura do seletor */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Arredonda os cantos do seletor */
+    background-color: rgb(214, 235, 253); /* Define a cor de fundo do seletor */
+    width: 450px; /* Define a largura do seletor */
+    height: 45px; /* Define a altura do seletor */
+}
+
+/* Estilo para o botão de busca de imagens de cães */
+#fetchDog {
+    display: block; /* Faz o botão ser exibido como um bloco */
+    margin: 20px auto; /* Adiciona margens em cima e embaixo, e centraliza horizontalmente */
+    padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+    font-size: 20px; /* Ajusta o tamanho da fonte dentro do botão */
+    cursor: pointer; /* Muda o cursor para uma mão quando passa sobre o botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    background-color: rgb(7, 128, 128); /* Define a cor de fundo do botão */
+    color: aliceblue; /* Define a cor do texto do botão */
+    transition: background-color 0.3s; /* Define uma transição suave para a mudança de cor do fundo */
+}
+
+/* Estilo para quando o mouse está sobre o botão */
+#fetchDog:hover {
+    background-color: #6ed3d3; /* Altera a cor de fundo do botão quando o mouse está sobre ele */
+    color: black; /* Muda a cor do texto do botão para preto */
+}
+
+/* Estilo para o parágrafo que exibe o fato curioso sobre cães */
+#factText {
+    font-size: 30px; /* Define o tamanho da fonte do parágrafo */
+    margin-bottom: 20px; /* Adiciona uma margem embaixo do parágrafo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do texto */
+    text-align: center; /* Centraliza o texto do parágrafo */
+}
+
+/* Estilo para o contêiner que armazena as imagens dos cães */
+#imagesContainer {
+    display: flex; /* Usa o modelo flexbox para o layout */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha, se necessário */
+    justify-content: center; /* Centraliza os itens dentro do contêiner */
+    margin-top: 20px; /* Adiciona uma margem em cima do contêiner */
+    max-height: 400px; /* Define uma altura máxima para o contêiner */
+    overflow-y: auto; /* Habilita a rolagem vertical se o conteúdo exceder a altura máxima */
+}
+
+/* Estilo para cada item de imagem */
+.imageItem {
+    width: 350px; /* Define a largura de cada item de imagem */
+    height: 350px; /* Define a altura de cada item de imagem */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda os limites do contêiner */
+    border-radius: 20px; /* Arredonda os cantos do item de imagem */
+    margin: 10px; /* Adiciona uma margem ao redor do item de imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao item de imagem para dar profundidade */
+}
+
+/* Estilo para a imagem dentro de cada item de imagem */
+.imageItem img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+    height: 100%; /* Faz a imagem ocupar 100% da altura do contêiner */
+    object-fit: cover; /* Faz a imagem cobrir o contêiner, mantendo a proporção */
+    transition: transform 0.3s ease; /* Define uma transição suave para a transformação da imagem */
+}
+
+/* Estilo para a imagem quando o mouse está sobre ela */
+.imageItem img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse está sobre ela */
+}

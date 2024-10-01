@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="shortcut icon" href="pata-de-cachorro.png" type="image/x-icon">
+</head>
+<body>
+    <h1>All Dogs</h1> <!-- Título principal da página -->
+    <select id="raçaSelect"></select> <!-- Caixa de seleção onde o usuário pode escolher uma raça de cachorro -->
+    <button id="fetchDog">fetch dog</button> <!-- Botão que, ao ser clicado, busca as imagens de cães -->
+
+    <div id="cachorroImage"> <!-- Contêiner principal que irá armazenar o parágrafo de curiosidade e as imagens dos cães -->
+        <p id="factText"></p> <!-- Parágrafo para exibir um fato curioso sobre cães. Será preenchido dinamicamente via JavaScript -->
+        <div id="imagesContainer"></div> <!-- Contêiner que será preenchido com as imagens dos cães -->
+    </div>
+    
+   
+</body>
+<script src="main.js"></script>
+</html>
+
